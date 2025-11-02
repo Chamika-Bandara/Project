@@ -13,7 +13,7 @@
       <img src="img/logo.jpeg" alt="Company Logo">
       <h1>TECHVISION</h1>
     </div>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="#home" onclick="showSection('home')">HOME</a></li>
         <li><a href="#products" onclick="showSection('products')">PRODUCTS</a></li>
@@ -22,105 +22,101 @@
     </nav>
   </header>
 
-  <section id="home" class="active section">
-    <h2>TECHVISION</h2>
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=600&q=80" alt="TechVision Home Image" class="home-image">
-    <p>Welcome to <strong>TechVision</strong></p>
-    <p>Where innovation meets success.</p>
-    <p>We bring you the latest in tech solutions designed to simplify and empower your digital life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </section>
+  <main>
+    <section id="home" class="active section">
+      <h2>TECHVISION</h2>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=600&q=80" alt="TechVision Home Image" class="home-image">
+      <p>Welcome to <strong>TechVision</strong></p>
+      <p>Where innovation meets success.</p>
+      <p>We bring you the latest in tech solutions designed to simplify and empower your digital life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
 
-  <section id="products" class="section">
-    <h2>Our Products</h2>
-    <div class="products-banner">
-      <img src="img/banner.png" alt="Products Overview">
-      <p class="banner-description">Discover our cutting-edge solutions designed to elevate your digital ecosystem.</p>
-    </div>
-
-    <div class="products-layout">
-      <div class="products-main">
-        <!-- Product 1 -->
-        <div class="product">
-          <img src="img/smart_vision.jpeg" alt="Product 1">
-          <h3>SmartVision Pro</h3>
-          <p class="intro">Advanced AI driven camera system for businesses.</p>
-          <p class="details">Real-time analytics, facial recognition, and data insights for operational security. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product">
-          <img src="img/cloud.jpeg" alt="Product 2">
-          <h3>CloudSync Hub</h3>
-          <p class="intro">Reliable cloud storage for professionals.</p>
-          <p class="details">Secure high-speed data storage with automatic backups and cross-device accessibility. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product">
-          <img src="img/AI_processor.jpeg" alt="Product 3">
-          <h3>EdgeAI Processor</h3>
-          <p class="intro">Cutting-edge processing power for embedded systems.</p>
-          <p class="details">Enables real-time AI applications efficiently across industries. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product">
-          <img src="img/Vision_control.jpeg" alt="Product 4">
-          <h3>Vision Analytics</h3>
-          <p class="intro">Smart video analytics platform.</p>
-          <p class="details">Analyzes video streams in real-time for business intelligence and security. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="product">
-          <img src="img/iot.jpeg" alt="Product 5">
-          <h3>IoT Gateway</h3>
-          <p class="intro">Connect and control smart devices easily.</p>
-          <p class="details">Seamless IoT device integration with real-time monitoring and automation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- Product 6 -->
-        <div class="product">
-          <img src="img/data_vault.jpeg" alt="Product 6">
-          <h3>DataSecure Vault</h3>
-          <p class="intro">Enterprise-grade secure data storage.</p>
-          <p class="details">Protects sensitive data with encryption, access control, and backup options. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
+    <section id="products" class="section">
+      <h2>Our Products</h2>
+      <div class="products-banner">
+        <img src="img/banner.png" alt="Products Overview">
+        <p class="banner-description">Discover our cutting-edge solutions designed to elevate your digital ecosystem.</p>
       </div>
 
-      <aside class="products-aside">
-        <h2>Product Features</h2>
-        <ul>
-          <li>Scalable infrastructure</li>
-          <li>Easy integration</li>
-          <li>Advanced security features</li>
-          <li>Real-time monitoring & alerts</li>
-          <li>Customizable solutions</li>
-          <li>Cost-effective pricing models</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
+      <div class="products-layout">
+        <div class="products-main">
+          <div class="product">
+            <img src="img/smart_vision.jpeg" alt="SmartVision Pro">
+            <h3>SmartVision Pro</h3>
+            <p class="intro">Advanced AI driven camera system for businesses.</p>
+            <p class="details">Real-time analytics, facial recognition, and data insights for operational security. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
 
-  <section id="contact" class="section">
-    <div class="contact-layout">
-      <div class="contact-info">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you! Whether you have questions, feedback, or business inquiries, reach out anytime.</p>
-        <p>We bring you the latest in tech solutions designed to simplify and empower your digital life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p><strong>Email:</strong> contact@techvision.com</p>
-        <p><strong>Phone:</strong> +358 123 456 789</p>
-        <p><strong>Address:</strong> 123 ABC Street, XYZ city, Finland</p>
+          <div class="product">
+            <img src="img/cloud.jpeg" alt="CloudSync Hub">
+            <h3>CloudSync Hub</h3>
+            <p class="intro">Reliable cloud storage for professionals.</p>
+            <p class="details">Secure high-speed data storage with automatic backups and cross-device accessibility. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="product">
+            <img src="img/AI_processor.jpeg" alt="EdgeAI Processor">
+            <h3>EdgeAI Processor</h3>
+            <p class="intro">Cutting-edge processing power for embedded systems.</p>
+            <p class="details">Enables real-time AI applications efficiently across industries. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="product">
+            <img src="img/Vision_control.jpeg" alt="Vision Analytics">
+            <h3>Vision Analytics</h3>
+            <p class="intro">Smart video analytics platform.</p>
+            <p class="details">Analyzes video streams in real-time for business intelligence and security. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="product">
+            <img src="img/iot.jpeg" alt="IoT Gateway">
+            <h3>IoT Gateway</h3>
+            <p class="intro">Connect and control smart devices easily.</p>
+            <p class="details">Seamless IoT device integration with real-time monitoring and automation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="product">
+            <img src="img/data_vault.jpeg" alt="DataSecure Vault">
+            <h3>DataSecure Vault</h3>
+            <p class="intro">Enterprise-grade secure data storage.</p>
+            <p class="details">Protects sensitive data with encryption, access control, and backup options. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <aside class="products-aside">
+          <h2>Product Features</h2>
+          <ul>
+            <li>Scalable infrastructure</li>
+            <li>Easy integration</li>
+            <li>Advanced security features</li>
+            <li>Real-time monitoring & alerts</li>
+            <li>Customizable solutions</li>
+            <li>Cost-effective pricing models</li>
+          </ul>
+        </aside>
       </div>
-      <div class="contact-image">
-        <img src="img/map.jpeg" alt="Contact Image">
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>We'd love to hear from you! Whether you have questions, feedback, or business inquiries, reach out anytime.</p>
+          <p>We bring you the latest in tech solutions designed to simplify and empower your digital life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><strong>Email:</strong> contact@techvision.com</p>
+          <p><strong>Phone:</strong> +358 123 456 789</p>
+          <p><strong>Address:</strong> 123 ABC Street, XYZ city, Finland</p>
+        </div>
+        <div class="contact-image">
+          <img src="img/map.jpeg" alt="Contact Image">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <h2>Subscribe to our Newsletter</h2>
-    <form action="#">
+    <form action="#" role="form">
       <input type="email" placeholder="Enter your email" required>
       <input type="submit" value="Subscribe">
     </form>

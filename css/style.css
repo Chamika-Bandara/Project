@@ -1,127 +1,135 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: black;
-    scroll-behavior: smooth;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
+main {
+  flex: 1;
+}
+
+/* HEADER */
 header {
-    background-color: lightsteelblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  background-color: lightsteelblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-right: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 0.5rem;
 }
 
 .logo h1 {
-    font-size: 2rem;
-    color: navy;
-    margin: 0;
+  font-size: 2rem;
+  color: navy;
+  margin: 0;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #001a66;
-    font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #001a66;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: blue;
+nav ul li a:hover,
+nav ul li a:focus {
+  color: blue;
+  outline: none;
 }
 
 /* SECTIONS */
 .section {
-    padding: 4rem 1rem;
-    text-align: center;
-    display: none;
-    flex: 1;
+  padding: 4rem 1rem;
+  text-align: center;
+  display: none;
+  flex: 1;
 }
 
 .section.active {
-    display: block;
+  display: block;
 }
 
 /* HOME */
 #home h2 {
-    font-size: 2.25rem;
-    color: navy;
-    margin-bottom: 1rem;
+  font-size: 2.25rem;
+  color: navy;
+  margin-bottom: 1rem;
 }
 
 #home img {
-    width: 80%;
-    max-width: 50rem;
-    height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.625rem gray;
-    display: block;
-    margin: 1rem auto 0 auto;
+  width: 80%;
+  max-width: 50rem;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.625rem gray;
+  display: block;
+  margin: 1rem auto 0 auto;
 }
 
 #home p {
-    font-size: 1.375rem;
-    color: midnightblue;
-    line-height: 1.6;
-    margin-top: 1.5rem;
+  font-size: 1.375rem;
+  color: midnightblue;
+  line-height: 1.6;
+  margin-top: 1.5rem;
 }
 
 /* PRODUCTS */
 #products h2 {
-    font-size: 2rem;
-    color: navy;
-    margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: navy;
+  margin-bottom: 1.5rem;
 }
 
 .products-layout {
-    display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .products-main {
-    flex: 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .products-banner {
@@ -130,7 +138,7 @@ nav ul li a:hover {
 }
 
 .products-banner img {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   object-fit: cover;
   display: block;
@@ -139,160 +147,162 @@ nav ul li a:hover {
   box-shadow: none;
 }
 
-
-
 .banner-description {
   font-size: 1.25rem;
   color: navy;
   margin-top: 1rem;
 }
 
-/* Make product boxes slightly transparent to show background */
+/* PRODUCT BOXES */
 .product {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1.25rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem gray;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem gray;
 }
 
 .product img {
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .product h3 {
-    font-size: 1.625rem;
-    color: navy;
-    margin: 0.5rem 0;
+  font-size: 1.625rem;
+  color: navy;
+  margin: 0.5rem 0;
 }
 
 .product .intro {
-    font-size: 1.25rem;
-    color: navy;
-    margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: navy;
+  margin-bottom: 0.5rem;
 }
 
 .product .details {
-    font-size: 1.125rem;
-    color: black;
-    line-height: 1.4;
+  font-size: 1.125rem;
+  color: black;
+  line-height: 1.4;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 .products-aside {
-    flex: 1;
-    background-color: rgba(91, 161, 221, 0.9); /* slightly transparent */
-    padding: 1rem;
-    border-radius: 0.5rem;
-    min-width: 12.5rem;
-    height: fit-content;
-    position: sticky;
-    top: 3rem;
+  flex: 1;
+  background-color: rgba(91, 161, 221, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 12.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 3rem;
 }
 
 .products-aside h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: darkblue;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: darkblue;
 }
 
 .products-aside ul {
-    list-style: disc inside;
-    font-size: 1.125rem;
-    color: darkblue;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: left;
+  list-style: disc inside;
+  font-size: 1.125rem;
+  color: darkblue;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
 }
 
 /* CONTACT */
 .contact-layout {
-    display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .contact-info {
-    flex: 1;
-    min-width: 18.75rem;
-    text-align: left;
+  flex: 1;
+  min-width: 18.75rem;
+  text-align: left;
 }
 
 .contact-image {
-    flex: 1;
-    min-width: 18.75rem;
+  flex: 1;
+  min-width: 18.75rem;
 }
 
 .contact-image img {
-    width: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem gray;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem gray;
 }
 
 #contact h2 {
-    font-size: 2rem;
-    color: navy;
+  font-size: 2rem;
+  color: navy;
 }
 
 #contact p {
-    font-size: 1.25rem;
-    color: midnightblue;
-    line-height: 1.6;
+  font-size: 1.25rem;
+  color: midnightblue;
+  line-height: 1.6;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: lightsteelblue;
-    color: black;
+  text-align: center;
+  padding: 2rem;
+  background-color: lightsteelblue;
+  color: black;
 }
 
 footer h2 {
-    font-size: 1.375rem;
-    margin-bottom: 1rem;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
 }
 
 footer form {
-    display: inline-block;
+  display: inline-block;
 }
 
 footer input[type="email"] {
-    padding: 0.625rem;
-    width: 15.625rem;
-    font-size: 1rem;
+  padding: 0.625rem;
+  width: 15.625rem;
+  font-size: 1rem;
 }
 
 footer input[type="submit"] {
-    padding: 0.625rem 1.25rem;
-    background-color: navy;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+  background-color: navy;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
 }
 
-footer input[type="submit"]:hover {
-    background-color: blue;
+footer input[type="submit"]:hover,
+footer input[type="submit"]:focus {
+  background-color: blue;
+  outline: none;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 992px) {
-    .products-main {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .products-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .products-layout, .contact-layout {
-        flex-direction: column;
-    }
-    .products-main {
-        grid-template-columns: 1fr;
-    }
+  .products-layout,
+  .contact-layout {
+    flex-direction: column;
+  }
+
+  .products-main {
+    grid-template-columns: 1fr;
+  }
 }
