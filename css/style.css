@@ -1,11 +1,14 @@
-/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: black;
   scroll-behavior: smooth;
   min-height: 100vh;
@@ -17,12 +20,11 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
 main {
   flex: 1;
 }
 
-/* HEADER */
+
 header {
   background-color: lightsteelblue;
   display: flex;
@@ -75,7 +77,7 @@ nav ul li a:focus {
   outline: none;
 }
 
-/* SECTIONS */
+
 .section {
   padding: 4rem 1rem;
   text-align: center;
@@ -87,7 +89,7 @@ nav ul li a:focus {
   display: block;
 }
 
-/* HOME */
+
 #home h2 {
   font-size: 2.25rem;
   color: navy;
@@ -111,7 +113,7 @@ nav ul li a:focus {
   margin-top: 1.5rem;
 }
 
-/* PRODUCTS */
+
 #products h2 {
   font-size: 2rem;
   color: navy;
@@ -153,7 +155,7 @@ nav ul li a:focus {
   margin-top: 1rem;
 }
 
-/* PRODUCT BOXES */
+
 .product {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1.25rem;
@@ -186,7 +188,7 @@ nav ul li a:focus {
   line-height: 1.4;
 }
 
-/* SIDEBAR */
+
 .products-aside {
   flex: 1;
   background-color: rgba(91, 161, 221, 0.9);
@@ -213,7 +215,7 @@ nav ul li a:focus {
   text-align: left;
 }
 
-/* CONTACT */
+
 .contact-layout {
   display: flex;
   gap: 1.25rem;
@@ -250,7 +252,7 @@ nav ul li a:focus {
   line-height: 1.6;
 }
 
-/* FOOTER */
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -289,7 +291,7 @@ footer input[type="submit"]:focus {
   outline: none;
 }
 
-/* RESPONSIVE DESIGN */
+
 @media screen and (max-width: 992px) {
   .products-main {
     grid-template-columns: repeat(2, 1fr);
